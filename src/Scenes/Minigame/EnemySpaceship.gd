@@ -9,7 +9,6 @@ func _process(delta):
 	global_position.y += velocidade * delta
 	
 	if global_position.y >= 623:
-		Global.contfail += 1
 		Global.vida_global -= 1
 		queue_free()
 

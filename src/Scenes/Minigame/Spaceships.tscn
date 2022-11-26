@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/tela_feedback.png" type="Texture" id=1]
-[ext_resource path="res://Assets/bgspace.png" type="Texture" id=2]
+[ext_resource path="res://Assets/space.jpg" type="Texture" id=2]
 [ext_resource path="res://Scenes/Minigame/Spaceships.gd" type="Script" id=3]
 [ext_resource path="res://Assets/buto_play_branco (1).png" type="Texture" id=5]
 [ext_resource path="res://Assets/buto_play_rosa (1).png" type="Texture" id=6]
@@ -12,7 +12,7 @@ script = ExtResource( 3 )
 
 [node name="Bgspace" type="Sprite" parent="."]
 position = Vector2( 635.5, 323.5 )
-scale = Vector2( 4.99609, 2.55078 )
+scale = Vector2( 2.7, 2.7 )
 texture = ExtResource( 2 )
 
 [node name="Jogador" parent="." instance=ExtResource( 7 )]
@@ -87,7 +87,6 @@ position = Vector2( 1012, 0 )
 [node name="timerSpawn" type="Timer" parent="."]
 autostart = true
 
-[connection signal="area_entered" from="Jogador" to="Jogador" method="_on_Jogador_area_entered"]
 [connection signal="spawn_laser" from="Jogador" to="." method="_on_Jogador_spawn_laser"]
 [connection signal="pressed" from="Tutorial/Button_Play" to="." method="_on_Button_Play_pressed"]
 [connection signal="timeout" from="timerSpawn" to="." method="_on_timerSpawn_timeout"]

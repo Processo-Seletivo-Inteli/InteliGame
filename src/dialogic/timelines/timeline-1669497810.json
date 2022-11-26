@@ -1,0 +1,67 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669498179.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669498179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá, seja bem-vindo(a)! Em que posso ajudar você? "
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669497652.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669497652.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu vim para conferir o resultado do processo seletivo. Estou muito curioso(a)!"
+		},
+		{
+			"character": "character-1669498179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Haha! Então você pode falar com a recepcionista ali no balcão. Boa sorte!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669497810.json",
+		"name": "secondDialog"
+	}
+}

@@ -11,7 +11,6 @@ var vida_cond_= false
 
 #definir posicoes de spawn
 func _ready():
-	Global.terminou_jogo_nave = true
 	if $Tutorial.visible == true:
 		get_tree().paused= false
 	#pause_mode = Node.PAUSE_MODE_INHERIT
@@ -34,6 +33,7 @@ func _process(_delta):
 	$LabelPontuacao.text = "pontuação:" + str(Global.pontuacao)
 	if Global.pontuacao >= 120:
 		$LabelPontuacao.text = "Você conseguiu!"
+		Global.completouMinigame = true
 		TimerNave()
 		Transicao.FadeInto("res://Scenes/Levels/Inteli/Inteli.tscn")
 	if Global.vida_global <= 0:
@@ -54,6 +54,7 @@ func _on_Button_Play_pressed():
 	
 func Pause():
 	Global.vida_global = 5
+	Global.pontuacao = 0
 	return get_tree().reload_current_scene()
 	
 	#get_tree().paused

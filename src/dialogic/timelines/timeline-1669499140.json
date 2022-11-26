@@ -1,0 +1,65 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669497652.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669497652.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá, tudo bem? Gostaria de saber o resultado do processo seletivo."
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669498203.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669498203.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá! Eu sou a Priscila. O pessoal está bem empolgado! Bom, que tal você jogar um joguinho feito pelos alunos do Inteli enquanto eu procuro o seu nome na lista?"
+		},
+		{
+			"change_scene": "res://Scenes/Minigame/Spaceships.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669499140.json",
+		"name": "thirdDialog"
+	}
+}

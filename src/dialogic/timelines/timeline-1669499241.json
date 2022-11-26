@@ -1,0 +1,39 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1669498203.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1669498203.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Legal o joguinho, não? Você tirou de letra!\nBom, gostaria de dizer que você...\n...\nPARABÉNS, VOCÊ PASSOU! Você é oficialmente aluno(a) do Inteli!\nLogo logo entraremos em contato para passar mais informações! Fica de olho em seu e-mail."
+		},
+		{
+			"change_scene": "res://Scenes/Levels/City/City.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1669499241.json",
+		"name": "lastDialog"
+	}
+}

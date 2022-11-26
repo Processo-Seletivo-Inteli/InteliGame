@@ -16,3 +16,5 @@ shape = SubResource( 1 )
 texture = ExtResource( 1 )
 
 [node name="SaidaLaser" type="Position2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_Jogador_area_entered"]

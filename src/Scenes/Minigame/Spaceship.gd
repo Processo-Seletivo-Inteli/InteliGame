@@ -33,4 +33,5 @@ func tiro_laser():
 
 func _on_Jogador_area_entered(area):
 	if area.is_in_group("inimigos"):
-		area.levar_dano(1)
+		levar_dano(1)
+		area.queue_free()

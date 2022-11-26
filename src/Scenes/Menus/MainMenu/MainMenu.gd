@@ -1,7 +1,4 @@
 extends Control
-
-func _ready():
-	Global.Dialogoutcontrol= false
 	
 func _on_jogar_button_pressed():
 	Transicao.FadeInto("res://Scenes/Levels/City/City.tscn")

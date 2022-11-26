@@ -22,6 +22,11 @@ func _unhandled_key_input(event):
 	if LiberaPorta == true and Input.is_action_just_pressed("ui_e"):
 		Transicao.FadeInto("res://Scenes/Levels/Inteli/Inteli.tscn")
 		
-		
-		
+func _ready():
+	if Global.completouMinigame:
+		get_tree().paused = true
+		$FlashcardFrente.visible = true
+		$Botoes.visible = false
+	else:	
+		add_child(Dialogic.start('timeline-1669497730.json'))
 	
