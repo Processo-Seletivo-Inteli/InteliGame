@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Coletar Item.ogg-65afa8c82fd101a2c106f4f0b3275afe.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Coletar Item.ogg"
+dest_files=[ "res://.import/Coletar Item.ogg-65afa8c82fd101a2c106f4f0b3275afe.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,25 @@
+{
+	"color": "#ff5500b3",
+	"description": "",
+	"display_name": "Hawking",
+	"display_name_bool": true,
+	"id": "character-1663908054.json",
+	"mirror_portraits": false,
+	"name": "Hawking.json",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		},
+		{
+			"name": "Idle_Hawking_new",
+			"path": "res://images/Idle_Hawking_new.png"
+		}
+	],
+	"scale": 1400,
+	"theme": ""
+}

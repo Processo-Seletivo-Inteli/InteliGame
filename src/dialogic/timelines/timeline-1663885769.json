@@ -1,0 +1,61 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1663885732.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1663885732.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá Dellborg! Ouvi dizer que você precisa do Pen drive para consertar o computador do primeiro andar."
+		},
+		{
+			"character": "character-1663885732.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mas antes, gostaria que você me ajudasse em algo."
+		},
+		{
+			"character": "character-1663885732.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Estou jogando um jogo que é um compilado de minigames famosos e está faltando apenas um minigame para que eu consiga zerar o jogo."
+		},
+		{
+			"character": "character-1663885732.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Porém, não estou conseguindo terminar. Ajude-me a terminar o jogo que então eu lhe dou o Pen Drive. "
+		},
+		{
+			"emit_signal": "Play_Snake",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1663885769.json",
+		"name": "Dialogo_Pinky"
+	}
+}

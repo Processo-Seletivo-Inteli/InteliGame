@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Menus/PauseMenu/PauseMenu.gd" type="Script" id=1]
+[ext_resource path="res://images/BOTAO_CONT_BRANCO.png" type="Texture" id=2]
+[ext_resource path="res://images/BOTAO_MENU_ROSA.png" type="Texture" id=3]
+[ext_resource path="res://images/BOTAO_MENU_BRANCO.png" type="Texture" id=4]
+[ext_resource path="res://images/BOTAO_CONT_ROSA2.png" type="Texture" id=5]
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.184314 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -165.5
+margin_top = -113.5
+margin_right = 165.5
+margin_bottom = 71.5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 139.0
+margin_top = 75.0
+margin_right = 192.0
+margin_bottom = 109.0
+custom_constants/separation = 10
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 53.0
+margin_bottom = 14.0
+text = "Pausado"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer"]
+margin_top = 24.0
+margin_right = 53.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="ContinueButton" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -52.5
+margin_top = -18.5
+margin_right = 52.5
+margin_bottom = 18.5
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 2 )
+expand = true
+
+[node name="QuitButton" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -52.5
+margin_top = 30.5
+margin_right = 52.5
+margin_bottom = 65.5
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+expand = true
+
+[connection signal="pressed" from="ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_QuitButton_pressed"]

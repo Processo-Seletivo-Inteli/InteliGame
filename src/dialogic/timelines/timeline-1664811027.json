@@ -1,0 +1,81 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ola, meu amigo! Parece que você está evoluindo. Agora que sabe sobre Roadmap, eu vou te contar sobre Stakeholders "
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Essa métrica visa medir a comunicação e o alinhamento entre as partes envolvidas no desenvolvimento."
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para facilitar a comunicação, elabore um RACI map, que significa Responsible, Accountable, Consulted e Informed. "
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Trata-se de uma matriz com todas as funções e responsabilidades de pessoas específicas e que estão envolvidas em um projeto, dando clareza para todos."
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vi que você precisava de uma placa de vídeo para consertar o computador do andar abaixo. "
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu posso lhe dar, mas primeiro quero lhe propor um desafio. "
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu estou há mais de 10 anos invicto no jogo Pong e durante todo esse tempo venho procurando alguém capaz de me vencer."
+		},
+		{
+			"character": "character-1664810955.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Será que você conseguirá me superar?"
+		},
+		{
+			"emit_signal": "Play_Pingas",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1664811027.json",
+		"name": "Dialogo_Norman"
+	}
+}

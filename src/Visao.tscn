@@ -1,0 +1,283 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scripts/Pergunta_1.gd" type="Script" id=1]
+[ext_resource path="res://Mouse_Cursor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://images/flashcard_frente.png" type="Texture" id=3]
+[ext_resource path="res://images/flashcard_tras.png" type="Texture" id=4]
+[ext_resource path="res://images/Medal_Platina.png" type="Texture" id=5]
+[ext_resource path="res://images/Medal_Prata.png" type="Texture" id=6]
+[ext_resource path="res://images/Medal_Bronze.png" type="Texture" id=7]
+[ext_resource path="res://images/Medal_Ouro.png" type="Texture" id=8]
+[ext_resource path="res://images/button_home.png" type="Texture" id=9]
+[ext_resource path="res://Sounds/PC-LIGANDO.ogg" type="AudioStream" id=10]
+[ext_resource path="res://images/tela_feedback.png" type="Texture" id=11]
+[ext_resource path="res://images/buto_play_branco (1).png" type="Texture" id=12]
+[ext_resource path="res://images/buto_play_rosa (1).png" type="Texture" id=13]
+[ext_resource path="res://images/buto_play_rosa.png" type="Texture" id=14]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Visao_Perguntas" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="FlashCard_Tras" type="TextureRect" parent="Visao_Perguntas"]
+visible = false
+margin_left = -1.0
+margin_right = 1270.0
+margin_bottom = 652.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Button_Certo" type="Button" parent="Visao_Perguntas/FlashCard_Tras"]
+modulate = Color( 0.152941, 1, 0, 0 )
+margin_left = 637.0
+margin_top = 448.0
+margin_right = 775.0
+margin_bottom = 611.0
+text = "Acerteiiii"
+
+[node name="Button_Errado" type="Button" parent="Visao_Perguntas/FlashCard_Tras"]
+modulate = Color( 0.92549, 0.0627451, 0.0627451, 0 )
+margin_left = 457.0
+margin_top = 449.0
+margin_right = 595.0
+margin_bottom = 610.0
+keep_pressed_outside = true
+text = "Erreiiii"
+
+[node name="Texto_Button_Tras" type="Label" parent="Visao_Perguntas/FlashCard_Tras"]
+margin_left = 106.0
+margin_top = 75.0
+margin_right = 592.0
+margin_bottom = 208.0
+rect_scale = Vector2( 2.2, 2.2 )
+autowrap = true
+
+[node name="FlashCard_Frente" type="TextureRect" parent="Visao_Perguntas"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 1267.0
+margin_bottom = 649.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Button_Flashcard_Front" type="Button" parent="Visao_Perguntas/FlashCard_Frente"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 82.0
+margin_top = 68.0
+margin_right = 1186.0
+margin_bottom = 567.0
+
+[node name="Texto_Button_Frente" type="Label" parent="Visao_Perguntas/FlashCard_Frente"]
+margin_left = 78.0
+margin_top = 62.0
+margin_right = 521.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2.5, 2.5 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Feedback" type="ColorRect" parent="Visao_Perguntas"]
+visible = false
+margin_left = 116.0
+margin_top = 75.0
+margin_right = 1145.0
+margin_bottom = 549.0
+color = Color( 0.258824, 0.682353, 0.0862745, 1 )
+
+[node name="Label_Feedback" type="Label" parent="Visao_Perguntas/Feedback"]
+margin_left = 119.0
+margin_top = 3.0
+margin_right = 643.0
+margin_bottom = 235.0
+rect_scale = Vector2( 1.5, 1.5 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Button_Feedback" type="TextureButton" parent="Visao_Perguntas/Feedback"]
+margin_left = 463.0
+margin_top = 357.0
+margin_right = 562.0
+margin_bottom = 448.0
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 13 )
+texture_hover = ExtResource( 14 )
+expand = true
+
+[node name="pcligandosfx" type="AudioStreamPlayer2D" parent="Visao_Perguntas"]
+stream = ExtResource( 10 )
+
+[node name="Platina" type="TextureRect" parent="."]
+visible = false
+margin_left = 241.0
+margin_top = 88.0
+margin_right = 983.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Platina"]
+position = Vector2( 369, 92 )
+scale = Vector2( 2.22, 1.7725 )
+texture = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Platina"]
+margin_left = 61.0
+margin_top = 145.0
+margin_right = 311.0
+margin_bottom = 210.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Parabéns!! Você alcançou a maturidade final!! Seu time é aconselhado por um conselho de crescimento.
+"
+align = 1
+autowrap = true
+
+[node name="Home_Button_Platina" type="TextureButton" parent="Platina"]
+margin_left = 326.0
+margin_top = 293.0
+margin_right = 710.0
+margin_bottom = 677.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 9 )
+
+[node name="Ouro" type="TextureRect" parent="."]
+visible = false
+margin_left = 248.0
+margin_top = 88.0
+margin_right = 990.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ouro"]
+position = Vector2( 369, 93 )
+scale = Vector2( 2.22, 1.7725 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="Ouro"]
+margin_left = 64.0
+margin_top = 149.0
+margin_right = 318.0
+margin_bottom = 214.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Você alcançou a terceira maturidade da dimensão Visão. Agora seu time utiliza visão de produtos para tomar decisôes!"
+autowrap = true
+
+[node name="Home_Button_Ouro" type="TextureButton" parent="Ouro"]
+margin_left = 330.0
+margin_top = 293.0
+margin_right = 714.0
+margin_bottom = 677.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 9 )
+
+[node name="Prata" type="TextureRect" parent="."]
+visible = false
+margin_left = 241.0
+margin_top = 88.0
+margin_right = 983.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="Sprite" type="Sprite" parent="Prata"]
+position = Vector2( 362, 91 )
+scale = Vector2( 2.22, 1.7725 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="Prata"]
+margin_left = 86.0
+margin_top = 146.0
+margin_right = 341.0
+margin_bottom = 211.0
+rect_scale = Vector2( 2.2, 2.2 )
+text = "Você está indo bem, na maturidade 2 seu time está consciente da visão do produto, refletindo no objetivo do seu trabalho!"
+align = 1
+autowrap = true
+
+[node name="Home_Button_Prata" type="TextureButton" parent="Prata"]
+margin_left = 332.0
+margin_top = 296.0
+margin_right = 716.0
+margin_bottom = 680.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 9 )
+
+[node name="Bronze" type="TextureRect" parent="."]
+visible = false
+margin_left = 241.0
+margin_top = 88.0
+margin_right = 983.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="Sprite" type="Sprite" parent="Bronze"]
+position = Vector2( 368, 91 )
+scale = Vector2( 2.22, 1.7725 )
+texture = ExtResource( 7 )
+
+[node name="Label" type="Label" parent="Bronze"]
+margin_left = 55.0
+margin_top = 136.0
+margin_right = 305.0
+margin_bottom = 210.0
+rect_scale = Vector2( 2.5, 2.5 )
+text = "Você alcançou a primeira maturidade da dimensão Visão. O time não sabe e não tem visão sobre o produto."
+align = 1
+autowrap = true
+
+[node name="Home_Button_Bronze" type="TextureButton" parent="Bronze"]
+margin_left = 330.0
+margin_top = 284.0
+margin_right = 714.0
+margin_bottom = 668.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 9 )
+
+[node name="SemMedalha" type="TextureRect" parent="."]
+visible = false
+margin_left = 241.0
+margin_top = 88.0
+margin_right = 983.0
+margin_bottom = 512.0
+texture = ExtResource( 11 )
+expand = true
+
+[node name="Label" type="Label" parent="SemMedalha"]
+margin_left = 47.0
+margin_top = 128.0
+margin_right = 371.0
+margin_bottom = 174.0
+rect_scale = Vector2( 2, 2 )
+text = "Tente novamente. Você não está pronto para a próxima fase."
+align = 1
+autowrap = true
+
+[node name="Home_Button_SemMedalha" type="TextureButton" parent="SemMedalha"]
+margin_left = 327.0
+margin_top = 280.0
+margin_right = 711.0
+margin_bottom = 664.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 9 )
+
+[node name="Mouse_Cursor" parent="." instance=ExtResource( 2 )]
+
+[connection signal="pressed" from="Visao_Perguntas/FlashCard_Tras/Button_Certo" to="Visao_Perguntas" method="_on_Button_Certo_pressed"]
+[connection signal="pressed" from="Visao_Perguntas/FlashCard_Tras/Button_Errado" to="Visao_Perguntas" method="_on_Button_Errado_pressed"]
+[connection signal="pressed" from="Visao_Perguntas/FlashCard_Frente/Button_Flashcard_Front" to="Visao_Perguntas" method="_on_Button_Flashcard_Front_pressed"]
+[connection signal="pressed" from="Visao_Perguntas/Feedback/Button_Feedback" to="Visao_Perguntas" method="_on_Button_Feedback_pressed"]
+[connection signal="pressed" from="Platina/Home_Button_Platina" to="Visao_Perguntas" method="_on_Home_Button_Platina_pressed"]
+[connection signal="pressed" from="Ouro/Home_Button_Ouro" to="Visao_Perguntas" method="_on_Home_Button_Ouro_pressed"]
+[connection signal="pressed" from="Prata/Home_Button_Prata" to="Visao_Perguntas" method="_on_Home_Button_Prata_pressed"]
+[connection signal="pressed" from="Bronze/Home_Button_Bronze" to="Visao_Perguntas" method="_on_Home_Button_Bronze_pressed"]
+[connection signal="pressed" from="SemMedalha/Home_Button_SemMedalha" to="Visao_Perguntas" method="_on_Home_Button_SemMedalha_pressed"]

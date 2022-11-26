@@ -1,0 +1,25 @@
+{
+	"color": "#ff5500b3",
+	"description": "",
+	"display_name": "Ellen",
+	"display_name_bool": true,
+	"id": "character-1663907727.json",
+	"mirror_portraits": false,
+	"name": "Ellen.json",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Idle_Ellen_new.png"
+		},
+		{
+			"name": "Idle_Ellen_new",
+			"path": "res://images/Idle_Ellen_new.png"
+		}
+	],
+	"scale": 1400,
+	"theme": ""
+}

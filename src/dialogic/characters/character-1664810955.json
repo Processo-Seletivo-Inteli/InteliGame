@@ -1,0 +1,21 @@
+{
+	"color": "#ff5500b3",
+	"description": "",
+	"display_name": "Norman",
+	"display_name_bool": true,
+	"id": "character-1664810955.json",
+	"mirror_portraits": false,
+	"name": "Norman.json",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://images/NPC_Norman.png"
+		}
+	],
+	"scale": 1400,
+	"theme": ""
+}

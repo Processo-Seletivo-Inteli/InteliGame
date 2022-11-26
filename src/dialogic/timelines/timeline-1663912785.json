@@ -1,0 +1,87 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Muito bem, agora que você sabe qual é a dimensão da visão"
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Vou falar sobre o roadmap."
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "O roadmap é um mapa de como vamos chegar ou criar o produto com base no que queremos alcançar."
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "A cada lançamento, determinamos os objetivos, o que queremos alcançar com aquele produto e o que queremos alcançar com aquele resultado."
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Muito legal, né? "
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Então, fiquei sabendo que você precisava de uma peça para consertar um computador que estava quebrado por aí, seria a memória RAM, certo?"
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Eu tenho uma sobrando aqui. Posso lhe dar, mas primeiro preciso de uma ajuda sua"
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Bom, eu estou desenvolvendo um game como projeto pessoal e eu gostaria que você o testasse "
+		},
+		{
+			"character": "character-1663908054.json",
+			"event_id": "dialogic_001",
+			"portrait": "Idle_Hawking_new",
+			"text": "Espero que você goste dele, estou virando várias madrugadas pra deixá-lo perfeito!"
+		},
+		{
+			"emit_signal": "Play_Ship",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1663912785.json",
+		"name": "Dialogo_Hawking"
+	}
+}

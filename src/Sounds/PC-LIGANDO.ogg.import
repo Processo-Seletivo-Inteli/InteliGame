@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PC-LIGANDO.ogg-93ca16230731d1b0588c04d97b99fe46.oggstr"
+
+[deps]
+
+source_file="res://Sounds/PC-LIGANDO.ogg"
+dest_files=[ "res://.import/PC-LIGANDO.ogg-93ca16230731d1b0588c04d97b99fe46.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
