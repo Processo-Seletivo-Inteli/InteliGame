@@ -1,29 +1,30 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Scenes/Characters/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Menus/PauseMenu/PauseMenu.tscn" type="PackedScene" id=2]
-[ext_resource path="res://OBJETIVO.tscn" type="PackedScene" id=3]
-[ext_resource path="res://tutorialhud.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Popup_tecla_E.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/ColisaoPorta.gd" type="Script" id=7]
+[ext_resource path="res://Assets/tecla_e.png" type="Texture" id=4]
+[ext_resource path="res://Assets/teclaroxaesq (2).png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Globals/Popup_tecla_E.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Levels/City/City.gd" type="Script" id=8]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_72.png" type="Texture" id=9]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_55.png" type="Texture" id=10]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_69.png" type="Texture" id=11]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_71.png" type="Texture" id=12]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsExteriorPredio/PREDIODOLADO-removebg-preview.png" type="Texture" id=13]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/2 Background/Day/2.png" type="Texture" id=14]
-[ext_resource path="res://images/Dell-Logo-1989-2016.png" type="Texture" id=15]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_03.png" type="Texture" id=16]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_66.png" type="Texture" id=17]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/2 Background/Day/3.png" type="Texture" id=18]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_70.png" type="Texture" id=19]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsExteriorPredio/prediopixell.png" type="Texture" id=20]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsExteriorPredio/Poste.png" type="Texture" id=21]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsExteriorPredio/Arvore Fora do Predio.png" type="Texture" id=22]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/2 Background/Day/1.png" type="Texture" id=23]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_02.png" type="Texture" id=24]
-[ext_resource path="res://craftpix-net-753737-free-green-zone-tileset-pixel-art/1 Tiles/Tile_01.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Tile_72.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Tile_55.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Tile_69.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Tile_71.png" type="Texture" id=12]
+[ext_resource path="res://Assets/PREDIODOLADO-removebg-preview.png" type="Texture" id=13]
+[ext_resource path="res://Assets/2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Tile_03.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Tile_66.png" type="Texture" id=17]
+[ext_resource path="res://Assets/3.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Tile_70.png" type="Texture" id=19]
+[ext_resource path="res://Assets/prediopixell.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Poste.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Arvore Fora do Predio.png" type="Texture" id=22]
+[ext_resource path="res://Assets/1.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Tile_02.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Tile_01.png" type="Texture" id=25]
+[ext_resource path="res://Assets/interaçãolabel-removebg-preview.png" type="Texture" id=26]
+[ext_resource path="res://Assets/teclaroxadir (2).png" type="Texture" id=27]
+[ext_resource path="res://Assets/movimentaçãolabel-removebg-preview.png" type="Texture" id=28]
 
 [sub_resource type="TileSet" id=1]
 0/name = "01"
@@ -211,7 +212,6 @@ texture = ExtResource( 20 )
 [node name="Dell-Logo-1989-2016" type="Sprite" parent="PredioDell"]
 position = Vector2( -3.29883, 25.4464 )
 scale = Vector2( 0.112895, 0.106329 )
-texture = ExtResource( 15 )
 
 [node name="ArvoreForaDoPredio" type="Sprite" parent="."]
 position = Vector2( 606, 325 )
@@ -247,8 +247,6 @@ shape = SubResource( 3 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 4, 4 )
-script = ExtResource( 7 )
-SceneToGo = "res://TileMap_Recepcao.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 819, 499.5 )
@@ -262,18 +260,81 @@ margin_top = 380.0
 margin_right = 838.0
 margin_bottom = 417.0
 
-[node name="Hint" parent="." instance=ExtResource( 3 )]
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 171, 549 )
-
-[node name="BotoesInteracao" parent="." instance=ExtResource( 5 )]
-position = Vector2( -75, 366 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
+
+[node name="Botoes" type="ColorRect" parent="."]
+margin_left = -73.0
+margin_top = 361.0
+margin_right = -33.0
+margin_bottom = 401.0
+color = Color( 1, 1, 1, 0 )
+
+[node name="Teclaroxaesq(2)" type="Sprite" parent="Botoes"]
+position = Vector2( 124.812, 216.187 )
+scale = Vector2( 0.165417, 0.171343 )
+texture = ExtResource( 5 )
+
+[node name="Teclaroxadir(2)" type="Sprite" parent="Botoes"]
+position = Vector2( 195.703, 215.219 )
+scale = Vector2( 0.107876, 0.102622 )
+texture = ExtResource( 27 )
+
+[node name="ColorRect" type="ColorRect" parent="Botoes"]
+margin_left = 88.0
+margin_top = 241.0
+margin_right = 241.0
+margin_bottom = 271.0
+color = Color( 0.247059, 0, 0.701961, 1 )
+
+[node name="Movimentaçãolabel-removebg-preview" type="Sprite" parent="Botoes/ColorRect"]
+position = Vector2( 75, 17 )
+scale = Vector2( 0.166856, 0.228261 )
+texture = ExtResource( 28 )
+
+[node name="ColorRect2" type="ColorRect" parent="Botoes"]
+margin_left = 266.0
+margin_top = 240.0
+margin_right = 418.0
+margin_bottom = 276.0
+color = Color( 0.247059, 0, 0.701961, 1 )
+
+[node name="Interaçãolabel-removebg-preview" type="Sprite" parent="Botoes/ColorRect2"]
+position = Vector2( 76, 18 )
+scale = Vector2( 0.192956, 0.21656 )
+texture = ExtResource( 26 )
+
+[node name="TeclaE" type="Sprite" parent="Botoes"]
+position = Vector2( 338.25, 214 )
+scale = Vector2( 3.29167, 2.83333 )
+texture = ExtResource( 4 )
+
+[node name="Hint" type="ColorRect" parent="."]
+margin_left = 466.0
+margin_top = 24.0
+margin_right = 1244.0
+margin_bottom = 86.0
+color = Color( 0.364706, 0.0941176, 0.717647, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Hint"]
+margin_left = 6.0
+margin_top = 1.0
+margin_right = 316.0
+margin_bottom = 24.0
+rect_scale = Vector2( 2.5, 2.5 )
+custom_colors/font_color = Color( 0.631373, 0.764706, 0.890196, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Enter the building"
+align = 1
+valign = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

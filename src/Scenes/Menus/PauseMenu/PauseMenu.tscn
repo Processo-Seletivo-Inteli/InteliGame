@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Menus/PauseMenu/PauseMenu.gd" type="Script" id=1]
-[ext_resource path="res://images/BOTAO_CONT_BRANCO.png" type="Texture" id=2]
-[ext_resource path="res://images/BOTAO_MENU_ROSA.png" type="Texture" id=3]
-[ext_resource path="res://images/BOTAO_MENU_BRANCO.png" type="Texture" id=4]
-[ext_resource path="res://images/BOTAO_CONT_ROSA2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/BOTAO_CONT_BRANCO.png" type="Texture" id=2]
+[ext_resource path="res://Assets/BOTAO_MENU_ROSA.png" type="Texture" id=3]
+[ext_resource path="res://Assets/BOTAO_MENU_BRANCO.png" type="Texture" id=4]
+[ext_resource path="res://Assets/BOTAO_CONT_ROSA2.png" type="Texture" id=5]
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2

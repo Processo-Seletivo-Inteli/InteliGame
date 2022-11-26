@@ -1,22 +1,21 @@
 [gd_scene load_steps=29 format=2]
 
-[ext_resource path="res://SettingsMenu.tscn" type="PackedScene" id=1]
-[ext_resource path="res://images/BACKGROUNDDDD.png" type="Texture" id=2]
-[ext_resource path="res://images/buto_play_branco.png" type="Texture" id=3]
-[ext_resource path="res://images/botao_creditos_branco.png" type="Texture" id=4]
-[ext_resource path="res://images/Pause_branco.png" type="Texture" id=5]
-[ext_resource path="res://images/buto_play_rosa (1).png" type="Texture" id=6]
-[ext_resource path="res://images/X_botao_branco.png" type="Texture" id=7]
-[ext_resource path="res://images/buto_play_branco (1).png" type="Texture" id=8]
-[ext_resource path="res://images/BOTAO_EXIT_ROSA.png" type="Texture" id=9]
-[ext_resource path="res://images/BOTAO_PLAY_BRANCO.png" type="Texture" id=10]
-[ext_resource path="res://images/BOTAO_PLAY_ROSA.png" type="Texture" id=11]
-[ext_resource path="res://images/botao_creditos_rosa.png" type="Texture" id=12]
-[ext_resource path="res://images/BOTAO_EXIT_BRANCO.png" type="Texture" id=13]
-[ext_resource path="res://images/logotipo.png" type="Texture" id=14]
-[ext_resource path="res://images/X_botao.png" type="Texture" id=15]
-[ext_resource path="res://images/Pause_rosa (1).png" type="Texture" id=16]
-[ext_resource path="res://images/flashcard4.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Menus/SettingsMenu/SettingsMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/BACKGROUNDDDD.png" type="Texture" id=2]
+[ext_resource path="res://Assets/buto_play_branco.png" type="Texture" id=3]
+[ext_resource path="res://Assets/botao_creditos_branco.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Pause_branco.png" type="Texture" id=5]
+[ext_resource path="res://Assets/buto_play_rosa (1).png" type="Texture" id=6]
+[ext_resource path="res://Assets/X_botao_branco.png" type="Texture" id=7]
+[ext_resource path="res://Assets/buto_play_branco (1).png" type="Texture" id=8]
+[ext_resource path="res://Assets/BOTAO_EXIT_ROSA.png" type="Texture" id=9]
+[ext_resource path="res://Assets/BOTAO_PLAY_BRANCO.png" type="Texture" id=10]
+[ext_resource path="res://Assets/BOTAO_PLAY_ROSA.png" type="Texture" id=11]
+[ext_resource path="res://Assets/botao_creditos_rosa.png" type="Texture" id=12]
+[ext_resource path="res://Assets/BOTAO_EXIT_BRANCO.png" type="Texture" id=13]
+[ext_resource path="res://Assets/logotipo.png" type="Texture" id=14]
+[ext_resource path="res://Assets/X_botao.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Pause_rosa (1).png" type="Texture" id=16]
 [ext_resource path="res://Scenes/Menus/MainMenu/MainMenu.gd" type="Script" id=18]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -46,6 +45,9 @@ Button/styles/focus = SubResource( 10 )
 Button/styles/hover = SubResource( 11 )
 Button/styles/normal = SubResource( 12 )
 Button/styles/pressed = SubResource( 13 )
+
+[sub_resource type="StreamTexture" id=16]
+flags = 4
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -166,7 +168,7 @@ margin_bottom = 40.0
 [node name="Sprite" type="Sprite" parent="Control"]
 position = Vector2( 640, 317 )
 scale = Vector2( 1.46406, 1.42188 )
-texture = ExtResource( 17 )
+texture = SubResource( 16 )
 
 [node name="TextureButton" type="TextureButton" parent="Control"]
 margin_left = 1027.0

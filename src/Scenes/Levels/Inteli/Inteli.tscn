@@ -1,35 +1,32 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=37 format=2]
 
-[ext_resource path="res://Popup_tecla_E.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Globals/Popup_tecla_E.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Levels/Inteli/Inteli.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/Menus/PauseMenu/PauseMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Characters/Player/Player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://OBJETIVO.tscn" type="PackedScene" id=6]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/Mesa Recepção.png" type="Texture" id=7]
-[ext_resource path="res://craftpix-net-481510-free-townspeople-cyberpunk-pixel-art/3/Idle.png" type="Texture" id=9]
-[ext_resource path="res://images/Floor 1.png" type="Texture" id=10]
-[ext_resource path="res://images/Parede_laranja.png" type="Texture" id=11]
-[ext_resource path="res://images/Wall 3.png" type="Texture" id=12]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/Pc Recepção.png" type="Texture" id=13]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/mapa.png" type="Texture" id=14]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/Porta.png" type="Texture" id=15]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/TVAnimação/TVTESTE1.png" type="Texture" id=18]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/Trava Porta.png" type="Texture" id=19]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/TVAnimação/TVTESTE2.png" type="Texture" id=20]
-[ext_resource path="res://images/Wall 4 Light.png" type="Texture" id=22]
-[ext_resource path="res://AssetsJogoPÓSBG/AssetsInteriorPredio/TVAnimação/TVTESTE3.png" type="Texture" id=25]
-[ext_resource path="res://images/Janela recepção.jpeg" type="Texture" id=29]
-[ext_resource path="res://images/cacto resized.png" type="Texture" id=30]
-[ext_resource path="res://images/mesarecepcaooo.png" type="Texture" id=31]
-[ext_resource path="res://images/door_outside_resized.png" type="Texture" id=32]
-[ext_resource path="res://images/elevador para o jogo.jpeg" type="Texture" id=33]
-[ext_resource path="res://images/Sofá_recepcao_1_resized.png" type="Texture" id=34]
-[ext_resource path="res://images/mesa-recepçãoo.png" type="Texture" id=35]
-[ext_resource path="res://images/Floor 4.png" type="Texture" id=36]
-[ext_resource path="res://images/mesarecp.png" type="Texture" id=37]
-[ext_resource path="res://images/main Wall.png" type="Texture" id=38]
-[ext_resource path="res://images/Door_new.png" type="Texture" id=39]
-[ext_resource path="res://images/Double_door_outside.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Mesa Recepção.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Idle.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Floor 1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Parede_laranja.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Wall 3.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Pc Recepção.png" type="Texture" id=13]
+[ext_resource path="res://Assets/mapa.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Porta.png" type="Texture" id=15]
+[ext_resource path="res://Assets/TVAnimação/TVTESTE1.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Trava Porta.png" type="Texture" id=19]
+[ext_resource path="res://Assets/TVAnimação/TVTESTE2.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Wall 4 Light.png" type="Texture" id=22]
+[ext_resource path="res://Assets/TVAnimação/TVTESTE3.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Janela recepção.jpeg" type="Texture" id=29]
+[ext_resource path="res://Assets/cacto resized.png" type="Texture" id=30]
+[ext_resource path="res://Assets/mesarecepcaooo.png" type="Texture" id=31]
+[ext_resource path="res://Assets/elevador para o jogo.jpeg" type="Texture" id=33]
+[ext_resource path="res://Assets/Sofá_recepcao_1_resized.png" type="Texture" id=34]
+[ext_resource path="res://Assets/mesa-recepçãoo.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Floor 4.png" type="Texture" id=36]
+[ext_resource path="res://Assets/mesarecp.png" type="Texture" id=37]
+[ext_resource path="res://Assets/main Wall.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Door_new.png" type="Texture" id=39]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Parede_laranja.png 0"
@@ -217,7 +214,6 @@
 12/shapes = [  ]
 12/z_index = 0
 13/name = "door_outside_resized.png 13"
-13/texture = ExtResource( 32 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 0, 0, 64, 128 )
@@ -231,7 +227,6 @@
 13/shapes = [  ]
 13/z_index = 0
 14/name = "Double_door_outside.png 14"
-14/texture = ExtResource( 40 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 0, 0, 128, 128 )
@@ -421,6 +416,7 @@ format = 1
 tile_data = PoolIntArray( 458753, 2, 0, 458754, 2, 0, 458762, 2, 0, 458763, 2, 0, 524289, 2, 0, 524290, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 1, 0 )
 
 [node name="Area_Recepcionista" type="Area2D" parent="."]
+visible = false
 position = Vector2( 700, 516 )
 __meta__ = {
 "_edit_group_": true
@@ -473,8 +469,6 @@ margin_left = 620.0
 margin_top = 235.0
 margin_right = 620.0
 margin_bottom = 235.0
-
-[node name="Node2D" parent="." instance=ExtResource( 6 )]
 
 [node name="PcRecepção" type="Sprite" parent="."]
 visible = false

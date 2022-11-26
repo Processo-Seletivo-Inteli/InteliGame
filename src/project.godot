@@ -68,21 +68,6 @@ _global_script_classes=[ {
 "class": "Spaceship",
 "language": "GDScript",
 "path": "res://Scenes/Minigame/Spaceship.gd"
-}, {
-"base": "Node",
-"class": "inputIA",
-"language": "GDScript",
-"path": "res://Scripts/inputIA.gd"
-}, {
-"base": "Node",
-"class": "inputJogador",
-"language": "GDScript",
-"path": "res://Scripts/InputJogador.gd"
-}, {
-"base": "Area2D",
-"class": "jogador",
-"language": "GDScript",
-"path": "res://personagens/jogador/jogador.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
@@ -96,27 +81,20 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "HistoryRow": "",
-"Spaceship": "",
-"inputIA": "",
-"inputJogador": "",
-"jogador": ""
+"Spaceship": ""
 }
 
 [application]
 
 config/name="PROBOT-DELL"
 run/main_scene="res://Scenes/Menus/MainMenu/MainMenu.tscn"
-config/icon="res://images/icon.png"
 
 [autoload]
 
-Global="*res://Scripts/Global.gd"
-Popups="*res://Scripts/Popups.gd"
-PopupsScene="*res://Popups.tscn"
-MouseCursor="*res://Mouse_Cursor.tscn"
-BackgroundMusic="*res://BackgroundMusic.tscn"
-Keys="*res://Popup_tecla_E.tscn"
-Transicao="*res://Transicao.tscn"
+Global="*res://Scenes/Globals/Global.gd"
+BackgroundMusic="*res://Scenes/Globals/BackgroundMusic.tscn"
+Keys="*res://Scenes/Globals/Popup_tecla_E.tscn"
+Transicao="*res://Scenes/Globals/Transicao.tscn"
 
 [display]
 
