@@ -6,7 +6,7 @@
 
 # InteliGame
 
-## ELEVATE & Inteli
+## ELEVATE & Rafael Techio
 
 ## Integrantes
 - <a href="https://www.linkedin.com/in/mariana-g%C3%B6rresen-b03059210">Mariana Görresen</a>
@@ -15,6 +15,7 @@
 - <a href="https://www.linkedin.com/in/guilherme-moura-9668821a5/">Guilherme Moura</a>
 - <a href="https://www.linkedin.com/in/henrique-burle/">Henrique Burle</a>
 - <a href="https://www.linkedin.com/in/jos%C3%A9-vitor-marcelino-4165ba24a/">José Vitor Marcelino</a>
+- <a href="https://www.linkedin.com/in/rafael-techio/">Rafael Techio</a>
 
 ## Descrição
 
@@ -22,7 +23,7 @@ InteliGame é um jogo de plataforma 2D feito para auxiliar na experiência de re
 
 ## 🎮 Jogue agora
 
-Para acessar o jogo diretamente do seu navegador entre no seguinte link: [PROBOTS](https://processo-seletivo-inteli.github.io/InteliGame/)
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [InteliGame](https://processo-seletivo-inteli.github.io/InteliGame/)
 
 ## 📁 Estrutura de pastas
 
