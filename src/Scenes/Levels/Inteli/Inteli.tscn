@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Scenes/Globals/Popup_tecla_E.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Levels/Inteli/Inteli.gd" type="Script" id=2]
@@ -377,38 +377,6 @@ tracks/0/keys = {
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 93, 53.75 )
 
-[sub_resource type="Animation" id=19]
-resource_name = "Parado"
-length = 1.3
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3 ]
-}
-
-[sub_resource type="Animation" id=20]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
-}
-
 [sub_resource type="SegmentShape2D" id=7]
 b = Vector2( 1, 656 )
 
@@ -475,10 +443,7 @@ format = 1
 tile_data = PoolIntArray( 458753, 2, 0, 458754, 2, 0, 458762, 2, 0, 458763, 2, 0, 524289, 2, 0, 524290, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 1, 0, 589828, 0, 0 )
 
 [node name="Area_Recepcionista" type="Area2D" parent="."]
-position = Vector2( 915, 594 )
-__meta__ = {
-"_edit_group_": true
-}
+position = Vector2( 917, 583 )
 
 [node name="Idle" type="Sprite" parent="Area_Recepcionista"]
 position = Vector2( -15.9999, -9.99994 )
@@ -498,39 +463,10 @@ shape = SubResource( 6 )
 
 [node name="Popup_tecla_E" parent="Area_Recepcionista" instance=ExtResource( 1 )]
 visible = true
-margin_left = -55.0
-margin_top = -91.0
-margin_right = -18.0
-margin_bottom = -54.0
-
-[node name="Area_Recepcionista2" type="Area2D" parent="."]
-position = Vector2( 915, 594 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Idle" type="Sprite" parent="Area_Recepcionista2"]
-position = Vector2( -15.9999, -9.99994 )
-scale = Vector2( 2.44791, 2.90625 )
-texture = ExtResource( 9 )
-flip_h = true
-hframes = 4
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Area_Recepcionista2/Idle"]
-autoplay = "Parado"
-anims/Parado = SubResource( 19 )
-anims/RESET = SubResource( 20 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_Recepcionista2"]
-position = Vector2( -37, -0.25 )
-shape = SubResource( 6 )
-
-[node name="Popup_tecla_E" parent="Area_Recepcionista2" instance=ExtResource( 1 )]
-visible = true
-margin_left = -55.0
-margin_top = -91.0
-margin_right = -18.0
-margin_bottom = -54.0
+margin_left = -35.0
+margin_top = -78.0
+margin_right = 0.0
+margin_bottom = -60.0
 
 [node name="Colisao_Parede_Esquerda" type="StaticBody2D" parent="."]
 
@@ -722,5 +658,3 @@ texture = ExtResource( 6 )
 
 [connection signal="body_entered" from="Area_Recepcionista" to="." method="_on_Area_Recepcionista_body_entered"]
 [connection signal="body_exited" from="Area_Recepcionista" to="." method="_on_Area_Recepcionista_body_exited"]
-[connection signal="body_entered" from="Area_Recepcionista2" to="." method="_on_Area_Recepcionista_body_entered"]
-[connection signal="body_exited" from="Area_Recepcionista2" to="." method="_on_Area_Recepcionista_body_exited"]

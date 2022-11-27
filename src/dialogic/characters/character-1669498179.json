@@ -4,7 +4,7 @@
 	"display_name": "",
 	"display_name_bool": false,
 	"id": "character-1669498179.json",
-	"mirror_portraits": false,
+	"mirror_portraits": true,
 	"name": "Lucas",
 	"nickname": "",
 	"nickname_bool": false,
@@ -13,9 +13,9 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/IdleLucas.png"
+			"path": "res://Assets/lucas.png"
 		}
 	],
-	"scale": 100,
+	"scale": 1000,
 	"theme": ""
 }

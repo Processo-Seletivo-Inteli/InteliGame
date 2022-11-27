@@ -16,7 +16,7 @@ func _ready():
 func _on_Area_Recepcionista_body_entered(_body):
 	DialogControl= true
 	popup_E.visible= true
-	popup_E.set_global_position(Vector2(690, 636))
+	popup_E.set_global_position(Vector2(876, 514))
 	
 	
 #define variavel de controle como false ao sair da area 2D. E Deleta o popup da tela

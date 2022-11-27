@@ -274,6 +274,14 @@ position = Vector2( -12, -75 )
 position = Vector2( 1185, 61 )
 shape = SubResource( 2 )
 
+[node name="Popup_tecla_E" parent="." instance=ExtResource( 6 )]
+anchor_left = 1.0
+anchor_bottom = 0.5
+margin_left = 698.0
+margin_top = 428.0
+margin_right = 797.0
+margin_bottom = 428.0
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -26, 442 )
 
@@ -287,14 +295,6 @@ position = Vector2( 4, 4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 693, 501 )
 shape = SubResource( 4 )
-
-[node name="Sprite" type="Sprite" parent="Area2D"]
-
-[node name="Popup_tecla_E" parent="Area2D" instance=ExtResource( 6 )]
-margin_left = 676.0
-margin_top = 402.0
-margin_right = 713.0
-margin_bottom = 439.0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 171, 549 )
@@ -375,8 +375,8 @@ margin_right = 92.0
 margin_bottom = -3.0
 rect_scale = Vector2( 1.5, 1.5 )
 text = "Você se esforçou muito até aqui e conseguiu! Parabéns!
-Estamos anciosos para te receber. Fique de olho em 
-seu email, pois entraremos em contato com mais
+Estamos ansiosos para te receber. Fique de olho em 
+seu e-mail, pois entraremos em contato com mais
 informações em breve!"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

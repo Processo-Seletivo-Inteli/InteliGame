@@ -50,7 +50,13 @@
 			"character": "character-1669498203.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Olá! Eu sou a Priscila. O pessoal está bem empolgado! Bom, que tal você jogar um joguinho feito pelos alunos do Inteli enquanto eu procuro o seu nome na lista?"
+			"text": "Olá! Eu sou a Priscila. O pessoal está bem empolgado!\nBom, que tal você jogar um joguinho feito pelos alunos do Inteli enquanto eu procuro o seu nome na lista?"
+		},
+		{
+			"character": "character-1669497652.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Legal, vamos lá!"
 		},
 		{
 			"change_scene": "res://Scenes/Minigame/Spaceships.tscn",
