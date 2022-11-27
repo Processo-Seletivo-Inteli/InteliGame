@@ -54,7 +54,6 @@ func _on_Button_Play_pressed():
 	
 func Pause():
 	Global.vida_global = 5
-	Global.pontuacao = 0
 	return get_tree().reload_current_scene()
 	
 	#get_tree().paused
