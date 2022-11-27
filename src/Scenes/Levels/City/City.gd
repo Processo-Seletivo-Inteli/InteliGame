@@ -27,6 +27,7 @@ func _ready():
 		get_tree().paused = true
 		$FlashcardFrente.visible = true
 		$Botoes.visible = false
+		$Player.visible = false
 	else:	
 		add_child(Dialogic.start('timeline-1669497730.json'))
 	

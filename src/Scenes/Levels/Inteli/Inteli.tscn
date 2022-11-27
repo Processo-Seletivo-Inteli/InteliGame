@@ -493,10 +493,10 @@ shape = SubResource( 10 )
 
 [node name="PauseMenu" parent="." instance=ExtResource( 3 )]
 visible = false
-margin_left = 620.0
-margin_top = 235.0
-margin_right = 620.0
-margin_bottom = 235.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1270.0
+margin_bottom = 650.0
 
 [node name="PcRecepção" type="Sprite" parent="."]
 position = Vector2( 885, 607 )
@@ -612,7 +612,6 @@ texture = ExtResource( 14 )
 position = Vector2( 726, 524 )
 scale = Vector2( 0.596939, 0.644 )
 frames = SubResource( 11 )
-frame = 2
 speed_scale = 0.15
 playing = true
 
@@ -624,7 +623,7 @@ texture = ExtResource( 25 )
 position = Vector2( 242, 572 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 18 )
-frame = 2
+frame = 5
 speed_scale = 0.3
 playing = true
 

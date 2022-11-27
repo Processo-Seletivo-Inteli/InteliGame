@@ -29,10 +29,10 @@ func _on_timerSpawn_timeout():
 	
 	#Hud do jogo e checagem de vida
 func _process(_delta):
-	$LabelVida.text = "vida: " + str(Global.vida_global)
-	$LabelPontuacao.text = "pontuação:" + str(Global.pontuacao)
+	$ColorRect/LabelVida.text = "Vida: " + str(Global.vida_global)
+	$ColorRect/LabelPontuacao.text = "Pontuação:" + str(Global.pontuacao)
 	if Global.pontuacao >= 120:
-		$LabelPontuacao.text = "Você conseguiu!"
+		$ColorRect/LabelPontuacao.text = "Você conseguiu!"
 		Global.completouMinigame = true
 		TimerNave()
 		Transicao.FadeInto("res://Scenes/Levels/Inteli/Inteli.tscn")
