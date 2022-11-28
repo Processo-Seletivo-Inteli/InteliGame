@@ -24,7 +24,7 @@
 			"character": "character-1669498179.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Olá, seja bem-vindo(a)!\nEm que posso ajudar você? "
+			"text": "Olá, seja bem-vindo(a)! Em que posso ajudar você? "
 		},
 		{
 			"animation": "1-fade_in.gd",
@@ -56,7 +56,7 @@
 			"character": "character-1669498179.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Haha! Então você pode falar com a recepcionista ali no balcão. Boa sorte!"
+			"text": "Haha! Então você pode falar com a diretora acadêmica Flávia, que está à sua espera. Boa sorte!"
 		}
 	],
 	"metadata": {

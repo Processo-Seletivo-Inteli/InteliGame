@@ -24,7 +24,7 @@
 			"character": "character-1669498203.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Legal o joguinho, não? Você tirou de letra!\nBom, gostaria de dizer que você...\n...\nPARABÉNS, VOCÊ PASSOU! Você é oficialmente aluno(a) do Inteli!\nLogo logo entraremos em contato para passar mais informações! Fica de olho em seu e-mail."
+			"text": "Legal o joguinho, não? Todos os nossos alunos são desafiados a criar um jogo já no primeiro módulo!\nBom, este foi seu primeiro jogo com o Inteli. Estamos processando os resultados...\n...\nPARABÉNS, VOCÊ PASSOU! Você é oficialmente aluno(a) do Inteli!\nEstamos muito felizes em ter você com a gente! Agora, corre lá na Dorothy para ter mais detalhes dos seus resultados."
 		},
 		{
 			"change_scene": "res://Scenes/Levels/City/City.tscn",
