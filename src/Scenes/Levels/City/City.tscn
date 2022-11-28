@@ -368,7 +368,7 @@ margin_top = -110.0
 margin_right = -9.0
 margin_bottom = -96.0
 rect_scale = Vector2( 2, 2 )
-text = "Bem vindo(a) ao Inteli!"
+text = "Bem-vindo(a) ao Inteli!"
 
 [node name="Label2" type="Label" parent="FlashcardFrente"]
 margin_left = -265.0
